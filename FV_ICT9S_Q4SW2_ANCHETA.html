@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seatwork 2</title>
+	<link rel="stylesheet" type="text/css" href="sw2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="header">
+  <a class="logo">TIME CONVERTER</a>
+</div>
+
+</style>
+<center>
+    <div class="card">
+				<h3>Seconds</h3>
+				<p>
+					<input type="text" id="seconds">
+				</p>
+				<input type="button" onclick="SecMin()" value="Convert To Minutes">
+				<input type="button" onclick="SecHr()" value="Convert To Hours">
+				<input type="button" onclick="SecDay()" value="Convert To Days">
+    </div>
+    <div class="card">
+    <h3>Minutes</h3>
+				<p>
+					<input type="text" id="minutes">
+				</p>
+				<input type="button" onclick="MinSec()" value="Convert To Seconds">
+				<input type="button" onclick="MinHr()" value="Convert To Hours">
+				<input type="button" onclick="MinDay()" value="Convert To Days">
+    </div>
+  </div>
+  <div class="card">
+    <h3>Hours</h3>
+				<p>
+					<input type="text" id="hours">
+				</p>
+				<input type="button" onclick="HrSec()" value="Convert To Seconds">
+				<input type="button" onclick="HrMin()" value="Convert To Minutes">
+				<input type="button" onclick="HrDay()" value="Convert To Days">
+    </div>
+    <div class="card">
+    <h3>Days</h3>
+				<p>
+					<input type="text" id="days">
+				</p>
+				<input type="button" onclick="DaySec()" value="Convert To Seconds">
+				<input type="button" onclick="DayMin()" value="Convert To Minutes">
+				<input type="button" onclick="DayHr()" value="Convert To Hours">
+    </div>
+
+ </center>   
+    
+   
+  </div>
+</div>
+<script type="text/javascript">	
+	function SecMin(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function SecHr(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 3600;		
+		alert(x / y);
+	}
+
+	function SecDay(){
+		var x, y 
+		x = (document.getElementById('seconds').value);
+		y = 86400;		
+		alert(x / y);
+	}
+	function MinSec(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function MinHr(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function MinDay(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 1440;		
+		alert(x / y);
+	}
+function HrSec(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 3600;		
+		alert(x * y);
+	}
+	function HrMin(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function HrDay(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 24;		
+		alert(x / y);
+	}
+function DaySec(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 86400;		
+		alert(x * y);
+	}
+	function DayMin(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 1440;		
+		alert(x * y);
+	}
+	function DayHr(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 24;		
+		alert(x * y);
+	}
+</script>
+</body>
+</html>
+
+
+
+
